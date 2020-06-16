@@ -1,0 +1,35 @@
+Download Apache Kafaka from the link :
+
+https://www.apache.org/dyn/closer.cgi?path=/kafka/2.4.1/kafka_2.13-2.4.1.tgz
+
+
+The kafka reqires java to be installed.
+
+ set  Path=%path%;<java bin directory path>
+ set JAVA_HOME=<Path to java home dir>
+
+ Run Kafka
+ Extract kafka_2.13-2.4.1.tgz on root local drive.
+ 
+Set the Env. variables before you start the Zookeepoer and Kafka servers; either from terminal/cmd or from System Environment properteis.
+
+
+set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_201
+set path=%path%;C:\Program Files\Java\jdk1.8.0_201\bin;
+
+**************************************************
+
+1. open the cmd/terminal in D:\kafka_2.11-2.2.1\bin\windows or D:\kafka_2.11-2.2.1\bin\ directory as per the OS platform.
+
+ Start the ZooKeeper for configuration and management of kafka nodes
+ zookeeper-server-start ../../config/zookeeper.properties
+  
+
+ 2.After starting the zookeeper, Start the kafka Broker from another terminal in same path as above
+
+   kafka-server-start ../../config/server.properties
+
+   For windows set the path as below 
+   set path=%path%;C:\Windows\winsxs\x86_microsoft-windows-w..ommand-line-utility_31bf3856ad364e35_6.1.7600.16385_none_a1802b822e2a878c;
+
+   

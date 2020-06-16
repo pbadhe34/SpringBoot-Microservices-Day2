@@ -1,0 +1,5 @@
+D:\Docker-Apps\docker-compose-apps
+
+/d/Docker-Apps/docker-compose-apps
+
+/d/Docker-Apps/Docker-Asp-netCore-App

@@ -1,0 +1,23 @@
+version: '3'
+services:
+  web:     
+    image: pbadhe34/my-apps:app1
+    ports:
+     - "5100:8090"  
+    deploy:
+      replicas: 3
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+   
+  redis:
+    image: "redis"     
+    deploy:
+      replicas: 2
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
